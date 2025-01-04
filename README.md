@@ -32,3 +32,20 @@ The extracted features include:
 - **Frequency Features**: Power spectral density across frequency bands.
 
 These features were selected for their relevance to analyzing single-channel EEG data and enhancing model performance.
+
+## Saving the Dataset in Dictionary Format
+
+To streamline data processing and access, the dataset can be converted and saved in a dictionary format. This structure allows efficient storage and retrieval of EEG data and associated labels for classification tasks.
+
+Below is an example code snippet for saving the dataset in dictionary format:
+
+```python
+import pickle
+
+# Example: Organizing data into a dictionary
+dataset_dict = {
+    'EEG_signals': eeg_data,  # Replace 'eeg_data' with your EEG data array
+    'labels': sleep_stages    # Replace 'sleep_stages' with corresponding labels
+}
+```
+## fine-tuning process 

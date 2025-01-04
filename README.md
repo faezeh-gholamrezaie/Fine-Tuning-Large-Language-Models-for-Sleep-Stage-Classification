@@ -3,6 +3,7 @@ Sleep consists of distinct stages: Wake (Stage 0), Light Sleep (NREM1 - Stage 1)
 <p align="center">
 <img src="https://github.com/faezeh-gholamrezaie/Fine-Tuning-Large-Language-Models-for-Sleep-Stage-Classification/blob/main/Picture/Picture.png" width="500" />
 </p>
+
 ## Accessing the Dataset
 
 There are two ways to access the dataset for this project:

@@ -19,3 +19,16 @@ There are two ways to access the dataset for this project:
 import gdown
 file_id = '1Y2cTYR_t_10NAbznspE5bBjuATPdTgtq'
 gdown.download(f'https://drive.google.com/uc?export=download&id={file_id}', 'file.zip', quiet=False)
+```
+## EEG Feature Extraction
+
+To optimize the input for the model, we extracted key features from the EEG data. These features capture both time-domain and frequency-domain characteristics, enabling effective classification of sleep stages. 
+
+The extracted features include:
+- **Time Features**: Statistical metrics representing temporal dynamics.
+- **Hjorth Parameters**: Indicators of activity, mobility, and complexity.
+- **Wavelet Entropies**: Measures of signal randomness across wavelet scales.
+- **Kurtosis and Skewness**: Describing the distribution of signal amplitudes.
+- **Frequency Features**: Power spectral density across frequency bands.
+
+These features were selected for their relevance to analyzing single-channel EEG data and enhancing model performance.

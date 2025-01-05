@@ -52,3 +52,5 @@ dataset_dict = {
 }
 ```
 ## fine-tuning process 
+
+In our fine-tuning process, we used the LLaMA model with 3 billion parameters, applying the QLoRA (Quantized Low-Rank Adaptation) technique. QLoRA is a method designed to efficiently fine-tune large pre-trained models like LLaMA by reducing the memory footprint and computational requirements, making it feasible to work with limited hardware resources. By using QLoRA, we were able to perform the fine-tuning on our own dataset without the need for high-end GPUs or extensive computing power. This approach allowed us to adapt the model to our specific task while minimizing resource consumption.
